@@ -486,7 +486,8 @@ public interface NPCPath {
                     if (nextIndex < 1)  {
                         pathReverse = false;
                     } else if (nextIndex >= getPath().getLocationList().size() - 1) {
-                        pathReverse = true;
+                        pathReverse = false;
+                        currentEntryPath = 0;
                     }
                 }
 
